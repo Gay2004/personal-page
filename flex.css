@@ -24,13 +24,13 @@ body {
     height: 200px;
     padding: 0px;
     flex-grow: 1;
-    flex-shrink: 1;
-    min-width: 200px;
+    flex-shrink: 0;
+    min-width: 150px;
 }
 
-.box1 { flex-basis: 744px; }
-.box2 { flex-basis: 644px; }
-.box3 { flex-basis: 1400px; }
-.box4 { flex-basis: 258px; }
-.box5 { flex-basis: 557px; }
-.box6 { flex-basis: 557px; }
+.box1 { flex-basis: 500px; } 
+.box2 { flex-basis: 400px;} 
+.box3 { flex-basis: 100%; }
+.box4 { flex-basis: 253px; } /* ≈259px/1400px */
+.box5 { flex-basis: 554px; }   /* ≈559px/1400px */
+.box6 { flex-basis: 553px; }   /* ≈559px/1400px */
