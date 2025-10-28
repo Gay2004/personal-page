@@ -1,4 +1,4 @@
-/* === Starter Code === */
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -116,7 +116,7 @@ ul {
     justify-content: space-evenly;
 }
 
-/* Buttons */
+
 button {
     background: firebrick;
     padding: 0.5rem;
