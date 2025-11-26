@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://cdn.imgchest.com/files/w7pjcwpll7p.png);
+    background-repeat: no-repeat;
+    max-width: 1303px;
+    min-height: 1800px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 
+        minmax(75px, 50px)
+        minmax(441px, 400px)
+        minmax(100px, 196px)
+        minmax(300px, 303px);
+
+    grid-template-columns:     
+        minmax(50px, 250px)
+        minmax(200px, 700px)
+        minmax(250px, 576px);
+    grid-template-areas: 
+    "one five six"
+    "two two two"
+    "three three three"
+    "four four four";
+}
+
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
+
+/* -------------------------
+   MENU LIKE KG (BOX 5)
+--------------------------*/
+
+.kg-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    background-color: white;
+    height: 100%;
+    padding-left: 25px;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.kg-menu li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.kg-menu .arrow {
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-top: 3px;
+}
+
+.kg-menu .more {
+    color: #a3a3a3; /* серый как на сайте */
+}
+
+
+@media (max-width: 500px) {
+.container {
+grid-template-columns: 100%;
+grid-template-areas:
+"one seven eight"
+"two"
+"three"
+"four"
+"five"
+"six";
+}
+}
