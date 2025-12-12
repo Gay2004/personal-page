@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="grid4.css" class="style">
+</head>
+
+<body>
+<button onclick="switchStyle()"
+        style="position:absolute; top:0; right:0; padding:10px; z-index:1000;">
+    Style
+</button>
+
+<div class="container">
+   
+    <div class="box-logo">
+        <img src="https://www.mashina.kg/bundles/client/default/img/mashinka-name-header.svg" alt="mashina">
+    </div>
+    
+    <div class="box-hero">
+        <h1>ЛУЧШИЕ КРЕДИТЫ В КЫРГЫЗСТАНЕ</h1>
+    </div>
+    
+
+    <div class="box1">
+        <ul class="kg-menu">
+            <li>БАНКИ <span class="arrow">▼</span></li>
+            <li>КРЕДИТЫ <span class="arrow">▼</span></li>
+            <li>ВКЛАДЫ <span class="arrow">▼</span></li>
+            <li>КАРТЫ <span class="arrow">▼</span></li>
+            <li>МИКРОКРЕДИТЫ <span class="arrow">▼</span></li>
+            <li class="more">ЕЩЁ <span class="arrow">▼</span></li>
+        </ul>
+    </div>
+    
+    
+    <div class="box2">Flexbox Layout 1<br>(текст сверху)</div>
+    
+   
+    <div class="box3">Flexbox Layout 2<br>(текст снизу)</div>
+
+    <div class="box6">Left Sidebar<br>(вертикальная реклама)</div>
+    
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+</div>
+
+<script>
+function switchStyle() {
+    let style = document.querySelector('.style');
+    if (style.getAttribute('href') == 'grid4.css') {
+        style.setAttribute('href', 'grid2.css');
+    } else {
+        style.setAttribute('href', 'grid4.css');
+    }
+}
+</script>
+
+</body>
+</html>
