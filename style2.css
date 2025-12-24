@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+#styleSwitch {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+
+.header {
+    background: #0f172a;
+    color: white;
+    padding: 15px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+.nav {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #111827;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+.header-right {
+    display: none;
+}
+
+
+
+.hero {
+    padding: 20px;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.services {
+    padding: 20px;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+
+
+.footer {
+    background: #020617;
+    color: white;
+    padding: 20px;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 500px) {
+
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        width: 100%;
+        align-items: center;
+    }
+
+    .services-grid,
+    .footer-grid {
+        width: 100%;
+    }
+}

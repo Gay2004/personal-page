@@ -1,68 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Page</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Banks — Выгодные кредиты</title>
+
+    
+    <link rel="stylesheet" href="style.css" id="pagestyle">
 </head>
+
 <body>
-  <div id="header">
-    <h1>Ulukbek Stambekov</h1>
-  </div>
 
-  <div id="title">
-    <h2>Welcome to my personal page!</h2>
-    <p>
-      In this world, wherever there is light - there are also shadows.<br>
-      As long as the concept of winners exists, there must also be losers.<br>
-      The selfish desire of wanting to maintain peace causes wars,<br>
-      and hatred is born to protect love.
-    </p>
-  </div>
 
-  <div id="about">
-    <h3>About Me</h3>
-    <img src="https://cdn.imgchest.com/files/9a76b96962d5.jpg" 
-         alt="My personal photo">
-    <p>
-      I am a psychology student at AUCA, passionate about coding,
-      and a bit of a lazy boy :D
-    </p>
-  </div>
-  
-  <div id="fav">
-    <h2>My Favorites</h2>
+<button id="styleSwitch" onclick="switchStyle()">Switch Style</button>
 
-    <h3>Favorite Foods</h3>
-    <ol>
-      <li>Sashimi</li>
-      <li>Sushi</li>
-      <li>Lagman</li>
-    </ol>
+<header class="header">
+    <div class="container header-inner">
+        <div class="logo">BANKS</div>
 
-    <h3>Favorite People</h3>
-    <ol>
-      <li>My Father / Mother / Sister</li>
-      <li>My Girlfriend</li>
-      <li>Myself</li>
-    </ol>
+        <nav class="nav">
+            <a href="#">Банки</a>
+            <a href="#">Кредиты</a>
+            <a href="#">Вклады</a>
+            <a href="#">Карты</a>
+            <a href="#">Микрокредиты</a>
+            <a href="#">Еще</a>
+        </nav>
 
-    <h3>Favorite Movies</h3>
-    <ol>
-      <li>Green Book</li>
-      <li>Intouchables</li>
-      <li>The Gentlemen</li>
-    </ol>
-  </div>
+        <div class="header-right">
+            <span>Курсы валют</span>
+            <span>🔍</span>
+        </div>
+    </div>
+</header>
 
-  <div id="wish">
-    <h3>My Wishes</h3>
-    <p>
-      <strong>Honestly</strong>, I don't know what I want at the moment.<br>
-      I'm just going with the flow, but I have a feeling that I will succeed.<br>
-      I'm not a fan of thinking too much about the future.
-    </p>
-  </div>
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <span class="hero-subtitle">ПОДБЕРЕМ ДЛЯ ВАС</span>
+            <h1>Выгодные кредиты</h1>
+            <p>
+                Заполните единую онлайн-заявку, и мы покажем банки,
+                в которых у вас есть высокая вероятность получить кредит
+            </p>
+            <button class="hero-btn">ПОДОБРАТЬ КРЕДИТ</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://i.imgur.com/4ZQZQ9B.png" alt="Кредиты">
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container services-grid">
+        <div class="service-card">
+            <h3>Кредиты</h3>
+            <p>Оставьте заявку на получение кредита или сравните кредиты банков Кыргызстана</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Вклады</h3>
+            <p>Вложите ваши средства по максимально высокой процентной ставке</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Платежные карты</h3>
+            <p>Подберите оптимальную банковскую карту, которая подойдет именно вам</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <div class="logo footer-logo">BANKS</div>
+            <p class="footer-text">
+                Актуальная информация по банковским продуктам в Кыргызстане.
+                Курс валют в Бишкеке.
+            </p>
+        </div>
+
+        <ul>
+            <li>О проекте</li>
+            <li>Реклама</li>
+            <li>Политика</li>
+            <li>Контакты</li>
+        </ul>
+
+        <ul>
+            <li>Для банков</li>
+            <li>Для клиентов</li>
+            <li>Партнеры</li>
+            <li>Вакансии</li>
+        </ul>
+
+        <ul>
+            <li>Новости</li>
+            <li>Материалы</li>
+            <li>FAQ</li>
+            <li>Справочник</li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+        © 2022 Banks.kg
+    </div>
+</footer>
+
+
+<script>
+function switchStyle() {
+    const style = document.getElementById("pagestyle");
+    if (style.getAttribute("href") === "style.css") {
+        style.setAttribute("href", "style2.css");
+    } else {
+        style.setAttribute("href", "style.css");
+    }
+}
+</script>
+
 </body>
 </html>

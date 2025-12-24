@@ -1,53 +1,172 @@
-/* Убираем стандартные отступы у всех элементов */
 * {
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Весь текст на странице WHOLE PAGE */
 body {
-  font-family: "Gill Sans";
+    font-family: Arial, sans-serif;
+    color: #1f2a37;
+    background: #fff;
 }
 
-/* Шапка */
-#header {
-  background-color: dimgray;
-  height: 5.5rem;
-  border-bottom: 3rem solid LightSteelBlue;
+.container {
+    width: 1300px;
+    margin: 0 auto;
 }
 
-/* Название сайта (имя) website name  */
-h1 {
-  font-size: 1.5rem;
-  color: white;
+/* HEADER */
+
+.header {
+    border-bottom: 1px solid #eee;
 }
 
-/* title*/
-#title {
-  height: 29.5rem;
-  background-color: lightgray;
-  text-align: center;
+.header-inner {
+    display: flex;
+    align-items: center;
+    height: 70px;
 }
 
-/* Блок "Обо мне" ABOUT ME */
-#about {
-  display: flex;
+.logo {
+    font-weight: 700;
+    font-size: 22px;
+    margin-right: 40px;
 }
 
-#about img {
-  height: 22.5rem;
+.nav {
+    margin-right: 10px;
 }
 
-/* Все подзаголовки h3 */
-h3 {
-  color: LightSteelBlue;
-  width: 12.5rem;
-  margin: auto;
-  text-align: center;
-  padding-top: 2rem;
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #1f2a37;
+    font-size: 15px;
 }
 
-/* Блок "Избранное" */
-#fav {
-  display: flex;
-  justify-content: space-evenly;
+.header-right {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* HERO */
+
+.hero {
+    background: #f7fbfd;
+    padding: 60px 0;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #000;     
+    font-weight: 600;  
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+.hero-btn {
+    margin-top: 25px;
+    padding: 14px 26px;
+    background: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.hero-image {
+    width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 520px;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 60px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    border: 1px solid #eee;
+    padding: 25px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #f9fafb;
+    padding: 50px 0 20px;
+    font-size: 14px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    line-height: 1.5;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #6b7280;
+    font-size: 13px;
 }
